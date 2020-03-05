@@ -189,7 +189,7 @@ ul{
 }
 footer{
     box-shadow: 0px 0px 10px black;
-    background-color: indigo;
+    background-color: #1e1c21;
 }
 
 footer .container{
@@ -314,8 +314,35 @@ fieldset label{
     margin-top: 2em;
     cursor: pointer;
 }
+@media screen and (max-width: 1200px) {
+    .campea{
+        right:5px
+    }
+    .sobre .container div{
+        width: 50%;
+    }
+    .container{
+        width: 95%;
+    }
 
-
-
+    }
+    @media screen and (max-width: 778px){
+        header img{
+            max-width: 180px;
+        }
+        .container{
+            width: 98%;
+        }
+        .campea{
+            max-width: 500px;
+            margin-top: 50px;
+            right: -100px;
+        }
+        .sobre .container div{
+            width: 53%;
+            margin-left: 30px;
+        }
+    
+    }
 
 
