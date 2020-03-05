@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/525a7ba6e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-Players - Cadastro</title>
+</head>
+
+<body>
+    <header>
+        <div class="container cabecalho">
+            <a href="index.html">
+                <img src="css/Imagens/Logo.svg" alt="Logo do site Eplayers">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="voltar para a página inicial">INÍCIO</a></li>
+                    <li><a href="#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
+                    <li><a href="#resultados" title="Ir até a sessão de resultados das partidas">RESULTADOS</a></li>
+                    <li><a href="#noticias" class="Ir até a sessão de notícias">NOTÍCIAS</a></li>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        
+            <div class="titulo_pagina">
+                <h1>cadastro de jogador</h1>
+            </div>
+            <form action="" method="post" class="form_cadastro">
+
+                <div class="campo">
+                   <label for="nome">nome do jogador</label>
+                    <input type="text" name="nomedojogador" id="nome">
+                </div>
+
+                <div class="campo">
+                    <label for="nickdojogador">nick do jogador</label>
+                    <input type="text" name="nickdojogador" id="nick">
+                </div>
+
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+
+                <div class="campo">
+                    <label for="senha">senha</label>
+                    <input type="password" name="senha" id="senha">
+                </div>
+
+                <div class="campo">
+                    <label for="confirmarsenha">confirmar senha</label>
+                    <input type="password" name="confirmarsenha" id="confirmarsenha">
+                </div>
+
+                <div class="campo">
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento" max="2020-03-05" min="1900-01-01">
+                </div>
+
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select name="pais" id="pais">
+                        <option value="BR">Brasil</option>
+                        <option value="US">Estados Unidos</option>
+                        <option value="ES">Espanha</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Sexo</legend>
+
+                    <input type="radio" name="sexo" value="M" id="Masculino">
+                    <label for="Masculino">Masculino</label>
+
+                    
+                    <input type="radio" name="sexo" value="F" id="Feminino">
+                    <label for="Fenimino">Feminino</label>
+
+                    
+                    <input type="radio" name="sexo" value="O" id="Outro">
+                    <label for="Outro">Outro</label>
+
+                    
+                    <input type="radio" name="sexo" value="N" id="NA">
+                    <label for="Masculino">Prefiro não dizer</label>
+
+                </fieldset>
+
+                <div class="campo" class="termos">
+                    <input type="Checkbox" name="check" id="check">
+                    <label for="check">Declaro que li e aceito os termos de uso deste site</label>                    
+                </div>
+            <button type="submit" class="btn gradient">Cadastrar</button>
+            </form>
+
+    </main>
+    <footer>
+            <div class="container">
+                <div>
+                    <h5>INSTITUCIONAL</h5>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Fale conosco</a></li>
+                            <li><a href="#">Regras</a></li>
+                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Política de Privacidade</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <li><a href="#">Anuncie</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            
+                <div>
+                    <img src="css/Imagens/Logo.svg" alt="Logo do projeto E-Players">
+                    <div class="sociais">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube-square"></i>
+                    </div>
+                </div>
+            
+                
+                <div>
+                    <h5>PRINCIPAIS LIGAS</h5>
+                    <h6>LIGA CEBOLÃO</h6>
+                    <h6>LIGA LCK</h6>
+                    <H6>LIGA PROFISSIONAL CS</H6>
+                    <H6>LIGA WCG</H6>
+                </div>
+            </div> 
+
+            <p>® 2077 SENAI Eletronic Sports - Todos os direitos reservados</p>
+    </footer>
+
+</body>
+
+</html>
