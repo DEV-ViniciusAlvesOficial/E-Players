@@ -314,6 +314,12 @@ fieldset label{
     margin-top: 2em;
     cursor: pointer;
 }
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    display: none;
+
+}
 @media screen and (max-width: 1200px) {
     .campea{
         right:5px
@@ -343,8 +349,6 @@ fieldset label{
             margin-left: 30px;
         }
     
-        #horarios .container{   
-        }
         .ao_vivo{
             padding: 5.3em 5px;
             width: 50%;
@@ -384,3 +388,39 @@ fieldset label{
         }
     }
         /*fim média max 768px*/
+        @media screen and (max-width: 460px){
+        .cabecalho .fa-bars{
+            display:block;
+        }
+        .cabecalho div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 0 2em;
+        }
+        #menu{
+            position: absolute;
+            top: 72px;
+            width: 35%;
+            height: 250px;
+            background-color: #1e1c21;
+            display: none;
+            left: 0;
+
+        }
+        .cabecalho ul{
+            flex-direction: column;
+            height: 250px;
+        }
+        .cabecalho ul a{
+            padding: 0.5em 80% 1em 0.5em;
+            margin: 2em;
+            margin-left: 2em;
+        }
+        /*ocultar a shiyvanna no mobile*/
+        .campea{
+            display: none;
+        }
+
+        }

@@ -13,10 +13,15 @@
 <body>
     <header>
         <div class="container cabecalho">
+            <div>
+                <a href="#"  onclick="botaoMenu()">
+            <i class="fas fa-bars"></i>
+                </a>
             <a href="index.html">
                 <img src="css/Imagens/Logo.svg" alt="Logo do site Eplayers">
             </a>
-            <nav>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
@@ -298,10 +303,23 @@
                     <H6>LIGA WCG</H6>
                 </div>
             </div> 
-
             <p>® 2077 SENAI Eletronic Sports - Todos os direitos reservados</p>
     </footer>
+    <script>
+        function botaoMenu(){
+        var m = document.getElementById("menu");
+        if(m.style.display == "block"){
+            m.style.display = "none";
+        }else{
+            m.style.display = "block"
+             }
+        }
+/*fim botaoMenu*/
 
+
+
+
+    </script>
 </body>
 
 </html>
